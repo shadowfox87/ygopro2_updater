@@ -1,0 +1,35 @@
+{
+  "name": "YGOPro_Updater",
+  "version": "1.0.0",
+  "description": "Update the game.",
+  "main": "main.js",
+  "author": "James Collin",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^4.0.2",
+    "http": "^0.0.0",
+    "path": "^0.12.7",
+    "request": "^2.83.0",
+    "speedtest-net": "^1.3.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^1.6.0",
+    "electron-builder": "^19.12.0"
+  },
+  "build": {
+    "appId": "app.updater",
+    "asar": false,
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
