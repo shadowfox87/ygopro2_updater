@@ -8,12 +8,10 @@ Hi there, so I will explain how to compile and use this updater.
 2. Now you can open command prompt and type:
         npm install electron --save-dev --save-exact 
    This will install electron.
-3. Now you need to install Yarn from here: https://yarnpkg.com/en/docs/install#windows-stable
-   This will install Yarn to allow you to download packages.   
-4. Now you can open command prompt and type:
-        yarn add electron-builder --dev
+3. Now type this in command prompt:
+        npx electron-builder
    This will install Electron builder.
-5. To compile, navigate to the folder that contains the updater in command prompt. Use the commands in electron builder to compile for target platform. The package.json already has windows by default.
+5. To compile, navigate to the folder that contains the updater in command prompt. Use the commands in electron builder to compile for target platform. The package.json already has windows by default. Follow the instructions here for commands: https://www.electron.build/cli
 
 Read more here for help:
 https://github.com/electron/electron
